@@ -41,7 +41,7 @@ const calcMode = (arr) => {
  */
 const handleInput = (str) => {
 	const arr = str.split(',').map((num) => parseInt(num));
-	const isValid = arr.every((val) => Number.isInteger(val));
+	const isValid = arr.every((val) => Number.isFinite(val));
 	return isValid ? arr : isValid;
 };
 
