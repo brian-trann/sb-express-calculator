@@ -1,6 +1,6 @@
 const { sortValidInput, handleInput, calcMean, calcMode, calcMedian } = require('./helpers');
 
-describe('sortValidInput tests', () => {
+describe('sortValidInput tests, given an array of numbers', () => {
 	let nums0, nums1, nums2, nums3, nums4, nums5;
 
 	beforeEach(() => {
@@ -38,7 +38,7 @@ describe('sortValidInput tests', () => {
 	});
 });
 
-describe('handleInput tests', () => {
+describe('handleInput tests, all inputs are strings', () => {
 	let emptyStr, charString, num, nums;
 	beforeEach(() => {
 		emptyStr = '';
@@ -73,7 +73,7 @@ describe('handleInput tests', () => {
 	});
 });
 
-describe('calcMean tests', () => {
+describe('calcMean tests, given an array of numbers', () => {
 	let nums0, nums1, nums2, nums3, nums4, nums5, nums6;
 
 	beforeEach(() => {
@@ -122,7 +122,7 @@ describe('calcMean tests', () => {
 	});
 });
 
-describe('calcMode tests', () => {
+describe('calcMode tests, given an array of numbers', () => {
 	let nums0, nums1, nums2, nums3, nums4;
 
 	beforeEach(() => {
