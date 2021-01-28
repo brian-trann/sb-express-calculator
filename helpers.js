@@ -28,7 +28,8 @@ const calcMedian = (arr) => {
 const calcMode = (arr) => {
 	const d = {};
 	arr.forEach((val) => (d[val] ? d[val]++ : (d[val] = 1)));
-	const mode = Object.keys(d).reduce((acc, curr) => (d[acc] > d[curr] ? acc : curr));
+	const modeStr = Object.keys(d).reduce((acc, curr) => (d[acc] > d[curr] ? acc : curr));
+	const mode = parseInt(modeStr);
 	return mode;
 };
 
@@ -52,3 +53,5 @@ const handleInput = (str) => {
 const sortValidInput = (arr) => {
 	return arr.sort((a, b) => a - b);
 };
+
+module.exports = { sortValidInput, handleInput, calcMean, calcMode, calcMedian };
